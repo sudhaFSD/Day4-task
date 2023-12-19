@@ -1,0 +1,13 @@
+function numbers(l, r) {
+    var x = [],
+        i = Math.floor(l / 2) * 2 + 1; // start with an odd number
+
+    while(i <= r) {
+        x.push(i);
+        i += 2;
+    };
+    return x;        
+}
+
+console.log(numbers(10, 19));
+console.log(numbers(3, 5));
